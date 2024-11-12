@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: #2E4053;
+    padding: 16px 0;
+    color: #ffffff;
+}
+
+header .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between; /* Separação entre título e navegação */
+}
+
+header h1 {
+    margin:0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaço entre as abas */
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Espaço entre os artigos */
+}
+
+.articles article img {
+   /*  height: 180px; Altura automática para manter a proporção */
+   width: 100%;
+}
+
+.articles article {
+    width: 30%; /* Cada artigo ocupará cerca de metade da largura */
+    margin-bottom: 20px; /* Espaço entre as fileiras */
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: #666666;
+    color: #666666;
+    padding:8px;
+    display:inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top:8px;
+}
+
+.articles article a:hover{
+        text-decoration: underline;
+}
+
+.articles article p,
+.articles article a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3{
+    font-size: 14px;
+}
+
+section h2{
+    font-size: 32px;
+}
+
+#sports {
+    background-color: #E5E5E5;
+}
+
+#sports .articles article a {
+    background-color: #E5E5E5;
+}
+
+#economy {
+    background-color:#E9E9E9;
+}
+
+#economy  .articles article a {
+    background-color:#E9E9E9;
+}
+
+#entertainment {
+    background-color: #F3F3F3;
+}
+
+#entertainment .articles article a {
+        background-color: #F3F3F3;
+}
+
+#technology {
+    background-color:#F7F7F7;
+}
+
+#technology .articles article a {
+        background-color: #F7F7F7;
+}
